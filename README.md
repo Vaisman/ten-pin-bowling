@@ -2,6 +2,8 @@
 
 [![Travis build Status](https://travis-ci.org/Vaisman/ten-pin-bowling.svg?branch=master)](https://travis-ci.org/Vaisman/ten-pin-bowling)
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Vaisman_ten-pin-bowling&metric=alert_status)](https://sonarcloud.io/dashboard?id=Vaisman_ten-pin-bowling)
+
 [![License: ISC](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/ISC)
 
 A bowling score calculator application.
