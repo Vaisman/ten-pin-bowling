@@ -9,5 +9,9 @@ jdk:
 addons:
   sonarcloud:
     organization: vaisman-github
-    token:
-      secure: 5692729683a25c5f440ab434d3cf29a6a8a96745
+    token: dddcdc1ae278f18e809356e022782afb2507e8ec
+
+cache:
+  directories:
+    - '$HOME/.m2/repository'
+    - '$HOME/.sonar/cache'
