@@ -1,6 +1,6 @@
 ## Bowling Score Calculator 
 
-[![Travis build Status](https://travis-ci.org/Vaisman/bowling.svg?branch=master)](https://travis-ci.org/Vaisman/bowling)
+[![Travis build Status](https://travis-ci.org/Vaisman/ten-pin-bowling.svg?branch=master)](https://travis-ci.org/Vaisman/ten-pin-bowling)
 
 [![License: ISC](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/ISC)
 
