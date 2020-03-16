@@ -35,6 +35,9 @@
         <version>${compiler.version}</version>
         <configuration>
           <showWarnings>true</showWarnings>
+          <compilerArgs>
+            <arg>-Xlint</arg>
+          </compilerArgs>
         </configuration>
       </plugin>
       <plugin>
