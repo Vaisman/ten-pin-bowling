@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+  <Properties>
+    <Property name="fileName">logs/ten-pin-bowling.log</Property>
+    <Property name="fileSizeMB">10</Property>
+    <Property name="maxFilesCount">10</Property>
+  </Properties>
+  <Appenders>
+    <Console name="console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{DEFAULT} %t %-5p %c - %m%n"/>
+    </Console>
+
+    <RollingFile name="bowlingFileAppender" fileName="${fileName}" filePattern="${fileName}.%i">
+      <Policies>
+        <SizeBasedTriggeringPolicy size="${fileSizeMB} MB"/>
+      </Policies>
+      <DefaultRolloverStrategy max="${maxFilesCount}"/>
+      <PatternLayout pattern="%d{DEFAULT} %t %-5p %c - %m%n"/>
+    </RollingFile>
+  </Appenders>
+
+  <Loggers>
+    <Root level="info">
+      <AppenderRef ref="bowlingFileAppender"/>
+      <AppenderRef ref="console"/>
+    </Root>
+  </Loggers>
+</Configuration>
