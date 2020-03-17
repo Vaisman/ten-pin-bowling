@@ -1,7 +1,5 @@
-package com.h5g.bowling;
+package com.h5g.bowling.common.model;
 
-import com.h5g.bowling.common.model.FrameTurn;
-import com.h5g.bowling.common.model.ScoreFrame;
 import com.h5g.bowling.exceptions.BowlingException;
 
 import org.junit.jupiter.api.Test;
@@ -15,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class ScoreFrameTest {
 
-  private final ScoreFrame scoreFrame = new ScoreFrame();
+  private static final ScoreFrame scoreFrame = new ScoreFrame();
 
   @Test
   void setNullTurn() {

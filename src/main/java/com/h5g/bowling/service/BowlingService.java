@@ -20,8 +20,8 @@ public class BowlingService implements IBowlingService {
   private static final Logger LOGGER = LogManager.getLogger(BowlingService.class);
   private static final int ERROR_SCORE_VALUE = -1;
 
-  private IScoreInfoParser scoreInfoParser = new ScoreInfoParser();
-  private IScoreCalculator scoreCalculator = new ScoreCalculator();
+  private static final IScoreInfoParser scoreInfoParser = new ScoreInfoParser();
+  private static final IScoreCalculator scoreCalculator = new ScoreCalculator();
 
   /**
    * Calculate game score.

@@ -1,17 +1,13 @@
-package com.h5g.bowling;
+package com.h5g.bowling.params;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
-
-import com.h5g.bowling.params.OutputFormat;
-import com.h5g.bowling.params.ParamsHelper;
-import com.h5g.bowling.params.ParamsInfo;
 
 import org.junit.jupiter.api.Test;
 
 class ParamsHelperTest {
 
-  private final ParamsHelper paramsHelper = new ParamsHelper();
+  private static final ParamsHelper paramsHelper = new ParamsHelper();
 
   @Test
   void nullArgs() {

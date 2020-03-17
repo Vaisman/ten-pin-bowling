@@ -1,8 +1,6 @@
-package com.h5g.bowling;
+package com.h5g.bowling.common.model;
 
 import com.h5g.bowling.common.BowlingGameConstants;
-import com.h5g.bowling.common.model.GameScore;
-import com.h5g.bowling.common.model.ScoreFrame;
 import com.h5g.bowling.exceptions.BowlingException;
 
 import org.junit.jupiter.api.Test;
@@ -17,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class GameScoreTest {
 
-  private final GameScore gameScore = new GameScore();
+  private static final GameScore gameScore = new GameScore();
 
   @Test
   void setNullGameFrames() {

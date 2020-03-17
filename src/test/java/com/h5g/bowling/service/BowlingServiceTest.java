@@ -1,9 +1,7 @@
-package com.h5g.bowling;
+package com.h5g.bowling.service;
 
-import com.h5g.bowling.service.BowlingService;
 import com.h5g.bowling.calculator.model.ScoreCalculation;
 import com.h5g.bowling.calculator.model.CalculationResult;
-import com.h5g.bowling.service.IBowlingService;
 
 import org.junit.jupiter.api.Test;
 
@@ -11,8 +9,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class BowlingServiceTest {
 
-  private final IBowlingService bowlingService = new BowlingService();
-  private final static int ERROR_SCORE_VALUE = -1;
+  private static final IBowlingService bowlingService = new BowlingService();
+  private static final int ERROR_SCORE_VALUE = -1;
 
   @Test
   void calculateInvalidInput() {

@@ -1,4 +1,4 @@
-package com.h5g.bowling;
+package com.h5g.bowling.parser;
 
 import com.h5g.bowling.common.BowlingGameConstants;
 import com.h5g.bowling.common.model.GameScore;
@@ -6,8 +6,6 @@ import com.h5g.bowling.common.model.FrameType;
 import com.h5g.bowling.common.model.ScoreFrame;
 import com.h5g.bowling.exceptions.BowlingException;
 import com.h5g.bowling.exceptions.ScoreInfoParserException;
-import com.h5g.bowling.parser.IScoreInfoParser;
-import com.h5g.bowling.parser.ScoreInfoParser;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.jupiter.api.Test;
@@ -19,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class ScoreInfoParserTest {
 
-  private final IScoreInfoParser scoreInfoParser = new ScoreInfoParser();
+  private static final IScoreInfoParser scoreInfoParser = new ScoreInfoParser();
 
   @Test
   void parseGameScoreNullInput() {

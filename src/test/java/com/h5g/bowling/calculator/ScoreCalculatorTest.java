@@ -1,14 +1,12 @@
-package com.h5g.bowling;
+package com.h5g.bowling.calculator;
 
-import com.h5g.bowling.calculator.IScoreCalculator;
-import com.h5g.bowling.common.*;
+import com.h5g.bowling.common.BowlingGameConstants;
 import com.h5g.bowling.common.model.FrameTurn;
 import com.h5g.bowling.common.model.FrameType;
 import com.h5g.bowling.common.model.GameScore;
 import com.h5g.bowling.common.model.ScoreFrame;
 import com.h5g.bowling.exceptions.BowlingException;
 import com.h5g.bowling.exceptions.ScoreCalculatorException;
-import com.h5g.bowling.calculator.ScoreCalculator;
 
 import org.junit.jupiter.api.Test;
 
@@ -22,7 +20,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class ScoreCalculatorTest {
 
-  private final IScoreCalculator scoreCalculator = new ScoreCalculator();
+  private static final IScoreCalculator scoreCalculator = new ScoreCalculator();
 
   @Test
   void calculateNullGameScore() {
