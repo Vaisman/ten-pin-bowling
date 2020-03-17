@@ -32,9 +32,9 @@ The score calculator works by implementing the rules of score calculation descri
 ## Usage example
  ```
    mvn clean install
-   java -jar ten-pin-bowling.jar -s "X|7/|9-|X|-8|8/|-6|X|X|X||81"
-   java -jar ten-pin-bowling.jar -s "X|7/|9-|X|-8|8/|-6|X|X|X||81" -o json
-   java -jar ten-pin-bowling.jar -game-score-info "X|7/|9-|X|-8|8/|-6|X|X|X||81" -output json
-   java -jar ten-pin-bowling.jar -game-score-info "X|7/|9-|X|-8|8/|-6|X|X|X||81" -output string
+   java -jar target/ten-pin-bowling.jar -s "X|7/|9-|X|-8|8/|-6|X|X|X||81"
+   java -jar target/ten-pin-bowling.jar -s "X|7/|9-|X|-8|8/|-6|X|X|X||81" -o json
+   java -jar target/ten-pin-bowling.jar -game-score-info "X|7/|9-|X|-8|8/|-6|X|X|X||81" -output json
+   java -jar target/ten-pin-bowling.jar -game-score-info "X|7/|9-|X|-8|8/|-6|X|X|X||81" -output string
  ```
 
