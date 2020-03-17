@@ -12,6 +12,10 @@ A bowling score calculator application.
 
 The score calculator works by implementing the rules of score calculation described here [Score Calculation](https://slocums.homestead.com/gamescore.html)
 
+## Data flow chart diagram
+
+![alt text](https://github.com/Vaisman/ten-pin-bowling/blob/master/docs/data_flow_chart.png)
+
 ## Symbols and Information
   * **Strike** usually represented as an **X** is when the player knocks down all the pins during the first chance of a frame.
   * **Spare** usually represented as a **/** is when the player knocks down the rest of the remaining pins a next try.
