@@ -39,8 +39,10 @@ public class ScoreCalculator implements IScoreCalculator {
     for (int frameIndex = 0; frameIndex < BowlingGameConstants.GAME_FRAMES_COUNT; frameIndex++) {
       int baseScore = getFrameBaseScore(scoreFrames.get(frameIndex));
       int frameScore = baseScore + getBonusFrameScore(frameIndex, scoreFrames);
-      LOGGER.debug(String
-          .format("Frame: %d base core: %d frame score: %d", frameIndex, baseScore, frameScore));
+      if (LOGGER.isDebugEnabled()) {
+        LOGGER.debug(String
+            .format("Frame: %d base core: %d frame score: %d", frameIndex, baseScore, frameScore));
+      }
       totalScore += frameScore;
     }
 

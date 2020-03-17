@@ -52,14 +52,18 @@ public class ScoreInfoParser implements IScoreInfoParser {
   }
 
   private ScoreFrame buildScoreFrame(String scoreFrame, int frameIndex) {
-    LOGGER.debug(String.format("Build frame from: %s", scoreFrame));
+    if (LOGGER.isDebugEnabled()) {
+      LOGGER.debug(String.format("Build frame from: %s", scoreFrame));
+    }
 
     ScoreFrame frame = new ScoreFrame();
     List<FrameTurn> frameTurns = new ArrayList<>();
 
     for (char frameChunk : scoreFrame.toCharArray()) {
       FrameTurn frameTurn = FrameTurn.fromString(String.valueOf(frameChunk));
-      LOGGER.debug(String.format("Add frame turn %s to frame %s", frameTurn, scoreFrame));
+      if (LOGGER.isDebugEnabled()) {
+        LOGGER.debug(String.format("Add frame turn %s to frame %s", frameTurn, scoreFrame));
+      }
       frameTurns.add(frameTurn);
     }
 
@@ -72,7 +76,9 @@ public class ScoreInfoParser implements IScoreInfoParser {
     frame.setFrameTurns(frameTurns);
     frame.setFrameType(ParserHelper.getFrameType(frameTurns));
 
-    LOGGER.debug(String.format("Finish build frame from: %s", scoreFrame));
+    if (LOGGER.isDebugEnabled()) {
+      LOGGER.debug(String.format("Finish build frame from: %s", scoreFrame));
+    }
     return frame;
   }
 }
